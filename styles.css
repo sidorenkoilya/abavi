@@ -1,0 +1,130 @@
+/* Основні стилі для тіла сторінки */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('2.jpg'), url('3.jpg'); /* Фони */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Стилі для шапки */
+header {
+    height: 100px; /* Висота шапки */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Прозорий чорний фон */
+    z-index: 1;
+    padding: 0 20px;
+}
+
+/* Стилі для логотипу */
+.logo {
+    width: 200px;
+    margin-top: 10px; /* Відступ для логотипу */
+    transform: translateX(-15px); /* Зсуває елемент на 15px вліво */
+}
+
+/* Контейнер для SVG іконок */
+/* Контейнер для SVG іконок */
+.svg-container {
+    display: flex; /* Вирівнювання в один ряд */
+    gap: 10px; /* Відстань між іконками */
+    justify-content: center; /* Вирівнювання по центру */
+    
+}
+
+/* Стилі для SVG іконок */
+.svg-icon {
+    width: 50px; /* Встановлюємо однаковий розмір для всіх іконок */
+    height: 50px; /* Встановлюємо висоту */
+    cursor: pointer; /* Курсор у вигляді вказівника */
+}
+
+/* Додатковий стиль для зображення в іконках, щоб вони не розтягувалися */
+.svg-icon img {
+    width: 100%; /* Зображення заповнює весь контейнер */
+    height: 100%; /* Висота відповідно до ширини */
+}
+
+/* Великий контейнер з текстом та кнопкою */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Вирівнювання контейнера */
+    flex-direction: column; /* Вертикальне вирівнювання */
+    margin-top: 100px; /* Відступ зверху для контейнера */
+}
+
+.large-container {
+    text-align: center;
+    margin-top: 50px; /* Можна скоригувати */
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white; /* Цвет текста */
+}
+
+/* Контейнеры в ряд */
+.container-row {
+    display: flex;
+    flex-wrap: wrap; /* Перенос контейнеров на следующую строку */
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+/* Стиль для контейнеров */
+.container {
+    flex: 0 0 calc(50% - 20px); /* Два контейнера в ряд с отступом */
+    margin-bottom: 20px; /* Отступ снизу */
+    background-color: rgba(255, 255, 255, 0.1); /* Зроблено прозорим */
+    color: white; /* Білий колір тексту */
+    text-align: center;
+    padding: 20px; /* Внутрішній відступ */
+    transition: background-color 0.3s; /* Плавний перехід при наведенні */
+    cursor: pointer; /* Курсор у вигляді вказівника */
+    overflow: hidden; /* Скрыть переполнение */
+    box-sizing: border-box; /* Учитывать паддинги и границы в расчетах ширины и высоты */
+}
+
+
+/* Подсветка контейнера при наведении */
+.container:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Светлее фоновое цвет при наведении */
+}
+
+/* Стиль для кнопки "Читати далі" */
+.read-more {
+    background-color: #444; /* Темний колір кнопки */
+    color: white; /* Колір тексту */
+    border: none; /* Без обрамлення */
+    padding: 10px 20px; /* Внутрішній відступ кнопки */
+    font-size: 16px; /* Розмір тексту кнопки */
+    cursor: pointer; /* Курсор у вигляді вказівника */
+    border-radius: 5px; /* Закруглені кути */
+    margin-top: 10px; /* Відступ зверху */
+}
+
+/* Стиль для додаткового тексту */
+.extra-text {
+    display: none; /* Скрыть дополнительный текст по умолчанию */
+    margin-top: 10px; /* Відступ зверху */
+    font-size: 14px; /* Розмір шрифту для додаткового тексту */
+}
+
+/* Стиль для кнопки виклику */
+.call-button {
+    background-color: #28a745; /* Зелений фон */
+    color: white; /* Колір тексту */
+    border: none; /* Без обрамлення */
+    padding: 10px 20px; /* Внутрішній відступ кнопки */
+    font-size: 18px; /* Розмір тексту кнопки */
+    border-radius: 5px; /* Закруглені кути */
+    cursor: pointer; /* Курсор у вигляді вказівника */
+}
+
+/* Зелена кнопка при наведении */
+.call-button:hover {
+    background-color: #218838; /* Темніший зелений при наведенні */
+}
